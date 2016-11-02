@@ -41,18 +41,15 @@ Then do the following step:
 
 2. Comment out the following lines of code:
 
-  /*
-   * mbstate_t is an opaque object to keep conversion state during multibyte
-   * stream conversions.
-  */
-  /* 
-  #ifndef __mbstate_t_defined
-   define __mbstate_t_defined    1
-  typedef union {
-    char      __mbstate8[128];
-     __int64_t _mbstateL;  [> for alignment <]
-  } __mbstate_t;
-  #endif
-  */
-  
+         96 /*
+         97  * mbstate_t is an opaque object to keep conversion state during multibyte
+         98  * stream conversions.
+         99  */
+        100 //#ifndef __mbstate_t_defined
+        101 //# define __mbstate_t_defined    1
+        102 //typedef union {
+        103     //char      __mbstate8[128];
+        104     //__int64_t _mbstateL;  [> for alignment <]
+        105 //} __mbstate_t;
+        106 //#endif   
   You should be good to go...

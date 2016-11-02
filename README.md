@@ -40,6 +40,7 @@ Then do the following step:
 1. open [parsec_root_dir]/pkgs/libs/uptcpip/src/include/sys/bsd__types.h in your preferred editor. Note: This file is named bsd'_ _'types.h. There is a file called bsd_types.h too. Do not alter that file.
 
 2. Comment out the following lines of code:
+
   /*
    * mbstate_t is an opaque object to keep conversion state during multibyte
    * stream conversions.

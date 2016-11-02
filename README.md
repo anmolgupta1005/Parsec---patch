@@ -18,8 +18,8 @@ The fix is this patch.
 
 In case you do not want to downgrade your perl 5 version on your "updated" machines then just pull this script in the root directory of Parsec benchmark and do the following:
 
-1. chmod 700 parsec_fix.sh 
-2. ./parsec_fix.sh
+1. chmod 700 perl_fix.sh 
+2. ./perl_fix.sh
 
 
 Incase you get this error:
